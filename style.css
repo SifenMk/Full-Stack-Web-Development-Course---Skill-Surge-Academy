@@ -1,0 +1,202 @@
+body{
+  background-color: aqua;
+}
+h1{
+  text-align: center;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+h2{
+  text-align: center;
+  color: purple;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:40px
+  
+  
+}
+h3{
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+}
+
+.paragraphs{
+  text-align: center;
+  font-size: 20px;
+  font-family: fantasy;
+  color: blue;
+
+}
+
+.lists{
+  justify-items: center;
+  border: 10px solid black;
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+  font-family: cursive
+  
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  color: blue;
+  font-size: 40px;
+  font-family: cursive
+  
+}
+.container-2{
+  justify-self: center;
+  align-items: baseline;
+  border: 10px solid black;
+  width: 500px;
+  
+}
+.table{
+  justify-self: center;
+  width: 400px;
+  height: 300px;
+}
+
+@media(max-width:600px){
+  body{
+    background-color: grey;
+  }
+}
+
+/* Responsive Design */
+
+/* Base styles (for larger screens) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  
+}
+
+.heading h1,
+.heading h2,
+.heading h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.paragraphs {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.lists {
+  width: 60%;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.container-2 {
+  width: 50%;
+  margin: 20px auto;
+}
+/* For tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .paragraphs,
+  .lists,
+  .table,
+  .container-2 {
+    width: 90%;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .heading h1,
+  .heading h2,
+  .heading h3 {
+    font-size: 1.2rem;
+  }
+
+  .paragraphs {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lists {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .container-2 {
+    width: 100%;
+    padding: 10px;
+  }
+
+/* For very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 1rem;
+  }
+
+  .heading h2 {
+    font-size: 0.9rem;
+  }
+
+  .heading h3 {
+    font-size: 0.8rem;
+  }
+
+  .table {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+}
